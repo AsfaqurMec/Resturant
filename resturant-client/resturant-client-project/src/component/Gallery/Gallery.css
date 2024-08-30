@@ -1,0 +1,42 @@
+.cart {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    
+    /* Adjust this according to your design */
+  }
+  
+  .cart-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.696); /* Adjust the opacity as needed */
+    color: white; /* Text color of the overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem; /* Adjust the font size as needed */
+    opacity: 0; /* Initially hide the overlay */
+    transition: opacity 0.3s ease;
+     /* Add transition effect */
+  }
+  
+  .cart:hover .overlay {
+    opacity: 1; /* Show the overlay on hover */
+  }
+  .overlay div h1{
+   font-size: 2rem;
+   margin-bottom: 25px;
+  }
+  .overlay div p{
+    font-size: 1.5rem;
+   }
